@@ -1,0 +1,61 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  // grid-template-rows: auto;
+}
+
+.left {
+  background-color: $green-cv;
+  height: 100vh;
+  padding: 2rem;
+}
+
+.right {
+  background-color: $white;
+  padding: 2rem;
+  height: 100vh;
+  overflow-y: scroll;
+  // grid-column-start: 2;
+}
+
+// EStos son los estilos para mobil
+@media only screen and (max-width: 767px) {
+
+  .left {
+    width: 100vw;
+    height: 65px;
+  }
+
+  .right {
+  grid-row-start: 2;
+  }
+}
+
+// ESTILOS DE LOS TEXTOS
+.section__separator {
+  margin-top: 8rem;
+}
+
+.section__head {
+  padding-top: 2rem;
+}
+
+.section__title {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 3rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.section__subtitle{
+  display: inline-block;
+}
+
+.section__paragraph {
+  padding-top: 1rem;
+}
+
+.about i {
+  padding: 2rem 0.5rem;
+}
